@@ -46,6 +46,7 @@ public class JoglRenderer3D implements Observer {
   private static final int SCREEN_WIDTH = 640;
   private static final int SCREEN_HEIGHT = 480;
   private static final float OPAQUE = 1.0f;
+  private static final Vector CLEAR_COLOR = VectorFactory.createVector3(0, 0, 0); //VectorFactory.createVector3(1, 1, 1);
   private static final int JOGL_NUMBER_OF_LIGHTS = 8;
 
   /**

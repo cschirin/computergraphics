@@ -19,10 +19,8 @@ public class Spheres extends CgApplication {
 
     /** Constructor .*/
     private Spheres() {
-
         setUpRootNode();
         makeSpheres();
-
     }
 
     private void setUpRootNode() {
