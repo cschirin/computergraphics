@@ -39,7 +39,8 @@ public class Spheres extends CgApplication {
         mSphere.getMaterial().setShaderId(Material.SHADER_PHONG_SHADING);
         mSphere.getMaterial().addShaderId(Material.SHADER_COLOR);
         //Vector oColor = new Vector(0, 0, 139 / 255.0); //dark blue
-        Vector oColor = new Vector(81 / 255.0, 102 / 255.0, 0); //green
+        //Vector oColor = new Vector(81 / 255.0, 102 / 255.0, 0); //green
+        Vector oColor = new Vector(53 / 255.0 , 0, 148 / 255.0); //"blue" "purple" "burple"????  (Visual studio logo colour)
         mSphere.getMaterial().setReflectionDiffuse(oColor);
         mSphere.getMaterial().setTransparency(0.5);
         CgNode node = new CgNode(mSphere, "OuterSphere");
@@ -51,7 +52,8 @@ public class Spheres extends CgApplication {
         mSphere.getMaterial().setShaderId(Material.SHADER_PHONG_SHADING);
         mSphere.getMaterial().addShaderId(Material.SHADER_COLOR);
         //Vector mColor = new Vector(255 / 255.0, 170 / 255.0, 0); //mint green
-        Vector mColor = new Vector(0, 191 / 255.0, 168 / 255.0); //turquoise
+        //Vector mColor = new Vector(0, 191 / 255.0, 168 / 255.0); //turquoise
+        Vector mColor = new Vector(226 / 255.0 , 0, 255 / 255.0); //violet
         mSphere.getMaterial().setReflectionDiffuse(mColor);
         mSphere.getMaterial().setTransparency(0.50);
         CgNode node = new CgNode(mSphere, "MidSphere");
@@ -63,7 +65,8 @@ public class Spheres extends CgApplication {
         iSphere.getMaterial().setShaderId(Material.SHADER_PHONG_SHADING);
         iSphere.getMaterial().addShaderId(Material.SHADER_COLOR);
         //Vector iColor = new Vector(255 / 255.0, 170 / 255.0, 0); //orange
-        Vector iColor = new Vector(20 / 255.0 , 0, 255 / 255.0); //blue
+        //Vector iColor = new Vector(20 / 255.0 , 0, 255 / 255.0); //blue
+        Vector iColor = new Vector(255 / 255.0, 0, 137 / 255.0); //magenta
         iSphere.getMaterial().setReflectionDiffuse(iColor);
         CgNode node = new CgNode(iSphere, "InnerSphere");
         getCgRootNode().addChild(node);
