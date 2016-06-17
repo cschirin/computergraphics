@@ -37,7 +37,6 @@ public class Spheres extends CgApplication {
     private void makeOuterSphere() {
         ITriangleMesh mSphere = TriangleMeshFactory.createSphere(VectorFactory.createVector3(0, 0, 0), 3, 100);
         mSphere.getMaterial().setShaderId(Material.SHADER_PHONG_SHADING);
-        mSphere.getMaterial().addShaderId(Material.SHADER_COLOR);
         //Vector oColor = new Vector(0, 0, 139 / 255.0); //dark blue
         //Vector oColor = new Vector(81 / 255.0, 102 / 255.0, 0); //green
         Vector oColor = new Vector(53 / 255.0 , 0, 148 / 255.0); //"blue" "purple" "burple"????  (Visual studio logo colour)
@@ -50,7 +49,6 @@ public class Spheres extends CgApplication {
     private void makeMidSphere() {
         ITriangleMesh mSphere = TriangleMeshFactory.createSphere(VectorFactory.createVector3(0, 0, 0), 2, 100);
         mSphere.getMaterial().setShaderId(Material.SHADER_PHONG_SHADING);
-        mSphere.getMaterial().addShaderId(Material.SHADER_COLOR);
         //Vector mColor = new Vector(255 / 255.0, 170 / 255.0, 0); //mint green
         //Vector mColor = new Vector(0, 191 / 255.0, 168 / 255.0); //turquoise
         Vector mColor = new Vector(226 / 255.0 , 0, 255 / 255.0); //violet
@@ -63,7 +61,6 @@ public class Spheres extends CgApplication {
     private void makeInnerSphere() {
         ITriangleMesh iSphere = TriangleMeshFactory.createSphere(VectorFactory.createVector3(0, 0, 0), 1, 100);
         iSphere.getMaterial().setShaderId(Material.SHADER_PHONG_SHADING);
-        iSphere.getMaterial().addShaderId(Material.SHADER_COLOR);
         //Vector iColor = new Vector(255 / 255.0, 170 / 255.0, 0); //orange
         //Vector iColor = new Vector(20 / 255.0 , 0, 255 / 255.0); //blue
         Vector iColor = new Vector(255 / 255.0, 0, 137 / 255.0); //magenta
