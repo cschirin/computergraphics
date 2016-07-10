@@ -6,12 +6,11 @@ import cgresearch.ui.IApplicationControllerGui;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Arrays;
 
 /**
  * Created by christian on 24.06.16.
  */
-public class SpheresGui extends IApplicationControllerGui implements ActionListener {
+public class SpheresGUIOld extends IApplicationControllerGui implements ActionListener {
 
 
     private Spheres app;
@@ -24,7 +23,7 @@ public class SpheresGui extends IApplicationControllerGui implements ActionListe
     private JTextField gOuterTextField;
     private JTextField bOuterTextField;
 
-    public SpheresGui(Spheres app) {
+    public SpheresGUIOld(Spheres app) {
         this.app = app;
         this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
         //Build the GUI

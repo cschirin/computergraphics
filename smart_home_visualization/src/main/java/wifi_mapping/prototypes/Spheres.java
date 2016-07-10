@@ -93,7 +93,7 @@ public class Spheres extends CgApplication {
         appLauncher.create(app);
         appLauncher.setRenderSystem(AppLauncher.RenderSystem.JOGL);
         appLauncher.setUiSystem(AppLauncher.UI.JOGL_SWING);
-        appLauncher.addCustomUi(new SpheresGui((Spheres)app));
+        appLauncher.addCustomUi(new SpheresGUI((Spheres)app));
     }
 
     public void updateColour() {
